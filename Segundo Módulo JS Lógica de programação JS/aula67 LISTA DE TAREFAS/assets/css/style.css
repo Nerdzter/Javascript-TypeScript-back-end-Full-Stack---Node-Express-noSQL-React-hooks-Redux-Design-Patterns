@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root {
+    --background: rgb(122, 134, 155);
+    --background-color-dark: rgb(73, 84, 104);
+    --background-color-active: rgb(38, 91, 190);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--background);
+    font-family: 'Open sans', sans-serif;
+}
+
+.container {
+    max-width: 640px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: #000000;
+    box-shadow: 10cm;
+    border-radius: 10px;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 25px;
+    padding: 0 20px; 
+    border-radius: 15px;
+}
+
+form input:focus {
+    outline: 1px solid var(--background);
+}
+
+
+form button:hover{
+    background: var(--background-color-dark);
+    transition-duration: 0.5s;
+}
+form button:active{
+    background: var(--background-color-active);
+}
+.escreva{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+form button {
+    border: none;
+    background: var(--background);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 25px;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 15px;
+    align-self: center; /* Centraliza o botão horizontalmente dentro do contêiner flexível */
+    margin-top: 10px; /* Ajusta a margem superior se necessário */
+}
+
+
+.container{
+    text-align: center;
+}
